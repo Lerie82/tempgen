@@ -21,7 +21,13 @@ for($i=0;$i<=$argc-1;++$i)
 	{
 		//default: echo "nothing?"; exit(); break;
 		case "-f":
-			echo "loading script from file..";
+			/// new class
+			$gen = new TempGen();
+			$gen->parseFile($argv[$i+1]);
+
+			die(var_dump($gen));
+
+			echo "[-] Loading script from file..";
 		break;
 	}
 }
@@ -29,7 +35,9 @@ for($i=0;$i<=$argc-1;++$i)
 ///
 class TempGen
 {
-	/// constructor
+	private $script_file;
+
+	/// constructor: default/empty
 	public function __construct() {}
 
 	/// show help/arg info
@@ -43,8 +51,9 @@ class TempGen
 	}
 
 	/// parse a file
-	function parseFile()
+	function parseFile($file)
 	{
+		$this->script_file = $file;
 	}
 }
 ?>
