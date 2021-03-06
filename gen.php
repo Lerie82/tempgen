@@ -6,15 +6,15 @@
  Author: Lerie Taylor / lerie@lerieatylor.com / 2021 / https://www.lerietaylor.com/
 */
 
-$gen = new TempGen();
-
+/// check if we have any arguments, if not, show help and exit
 if($argc<=1)
 {
+	$gen = new TempGen();
 	echo $gen->showHelp();
 	die();
 }
 
-//go through the arguments
+/// go through the arguments, setup commands to execute
 for($i=0;$i<=$argc-1;++$i)
 {
 	switch($argv[$i])
@@ -26,11 +26,13 @@ for($i=0;$i<=$argc-1;++$i)
 	}
 }
 
-//
+///
 class TempGen
 {
+	/// constructor
 	public function __construct() {}
 
+	/// show help/arg info
 	public function showHelp()
 	{
 		$help = "This script will generate web templates based on user input. See the README file for details.\n";
@@ -38,6 +40,11 @@ class TempGen
 		$help .= "-f file_name.lt\n";
 
 		return $help."\n";
+	}
+
+	/// parse a file
+	function parseFile()
+	{
 	}
 }
 ?>
