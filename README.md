@@ -1,4 +1,4 @@
-# tempgen
+# Tempgen
 
 ### Generate Web Layouts
 Not sure how we got this far with so many different web frameworks and still don't have some kind of generator. WordPress takes a lot of the 
