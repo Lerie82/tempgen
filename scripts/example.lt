@@ -1,6 +1,9 @@
 {
-  "Template": {
-    "framework": "bulma",
-    "coms": "nav,menu, hero, footer"
-  }
+	"Template": {
+		"framework": "bulma"
+	},
+	"coms": {
+		"navbar": {},
+		"hero": {}
+	}
 }
