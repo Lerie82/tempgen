@@ -5,4 +5,5 @@ Not sure how we got this far with so many different web frameworks and still don
 automation for many people. However, it can be a pain in the ass for quick freelance projects to setup a new WordPress or cracnk out a 
 WordPress template for a specific framework. This script will take user input and return basic template files.
 
-## https://html5boilerplate.com/
+## References and Links
+* https://html5boilerplate.com/
